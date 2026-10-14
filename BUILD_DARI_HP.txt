@@ -1,0 +1,12 @@
+CARA BUILD APK DARI HP ANDROID (TANPA KOMPUTER)
+
+1. Download dan ekstrak ZIP project ini memakai aplikasi pengelola file. Pastikan folder LPBBarcodeOffline berisi folder .github dan app.
+2. Buka github.com di Chrome, login atau buat akun.
+3. Buat repository baru bernama LPBBarcodeOffline. Boleh private.
+4. Unggah isi folder LPBBarcodeOffline ke repository (bukan folder luarnya). Pastikan file .github/workflows/build-apk.yml ikut terunggah. Jika GitHub versi mobile tidak menampilkan folder .github, buka Chrome menu ⋮ lalu aktifkan Situs desktop.
+5. Buka tab Actions di repository, pilih workflow “Build APK”, lalu tekan Run workflow. Kalau diminta, konfirmasi Run workflow.
+6. Tunggu sampai workflow selesai dengan tanda centang hijau.
+7. Buka hasil run tersebut, gulir ke bagian Artifacts, unduh LPBBarcodeOffline-debug-apk.zip.
+8. Ekstrak ZIP artifact. File app-debug.apk ada di dalamnya. Ketuk file APK di HP untuk memasang. Jika Android meminta izin, izinkan instalasi dari Chrome/File Manager yang digunakan.
+
+Build pertama membutuhkan internet. Setelah APK terpasang, fitur pemindaian dan pemeriksaan dirancang berjalan offline. Project ini belum dianggap teruji sampai workflow build berhasil dan APK dicoba di HP.
